@@ -4,7 +4,5 @@ hosts: all
   become: true
 
   tasks:
-    - name: Update and upgrade apt packages
-      apt:
-        update_cache: yes
-        upgrade: yes
+    - name: Create a new directory "Practice"
+      mkdir "Practice"
